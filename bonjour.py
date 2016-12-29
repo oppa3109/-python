@@ -1,7 +1,3 @@
-"""
-###### lecture 1
-"""
-
 # coding=utf-8
 print("안녕하세요")
 # 주석 다는 것
@@ -35,4 +31,3 @@ print(name)
 """
 ###### lecture 3
 """
-
