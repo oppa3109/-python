@@ -31,10 +31,10 @@ lecture 2
 _2Myname = '에이미'
 print(_2Myname)
 
-print("je m'allell" + _2Myname)
-print('je m"allell' + _2Myname)
+print("je m'allell " + _2Myname)
+print('je m"allell ' + _2Myname)
 
-name = _2Myname * 2
+name = _2Myname * 3
 print(name)
 
 """
@@ -42,4 +42,3 @@ print(name)
 lecture 3
 ##########
 """
-
