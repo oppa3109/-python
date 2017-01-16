@@ -122,7 +122,7 @@ for y in an_en_list:
 
 for x in [2, 4, 6, 8, 10]:
     print(x),
-print('\n')
+print('\n' * 3)
 
 num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
 for x in range(0, 3):
@@ -131,6 +131,7 @@ for x in range(0, 3):
 for x in range(0, 3):
     for y in range(0, 3):
         print(num_list[x][y])
+print('\n' * 3)
 
 i = 0
 while i <= 10:
@@ -138,7 +139,7 @@ while i <= 10:
         break
     print(i),
     i += 1
-print('\n')
+print('\n' * 3)
 
 i = 0
 while i <= 10:
@@ -150,11 +151,113 @@ print('\n' * 3)
 
 ###############################################################################
 def add(f, l):
-    sum = f + l
-    return sum
+    sum2 = f + l
+    return sum2
 
 print(add(7, 2))
 print('\n' * 3)
 
 ###############################################################################
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+print(alphabet[0:3])
+print(alphabet[-3:])
+print(alphabet[:-3])
+print(alphabet[:3] + " Bonjour")
+
+print('\n' * 3)
+print("나는 %d살 이고요, 몸무게는 %.1fkg 이구요, 취미는 %s 입니다." %(19, 67, 'piano'))
+print(alphabet.capitalize())
+print(len(alphabet))
+print(alphabet.replace("A", "B"))
+print('\n' * 3)
+
+###############################################################################
+t_file = open("t.txt", "wb")
+print(t_file.mode)
+print(t_file.name)
+t_file.write(bytes("안녕하세요\n"))
+t_file.close()
+
+tr_file = open('t.txt', 'r')
+pp = tr_file.read()
+print(pp)
+tr_file.close()
+print('\n' * 3)
+
+###############################################################################
+class Duck_Hunting:
+    ducks = 13
+    def hunting(self):
+        print('Catch!')
+        self.ducks -= 1
+    def CheckDucks(self):
+        if self.ducks <= 0:
+            print('Good Dog!')
+        else:
+            print(str(self.ducks) + "Ducks left.")
+
+print("[dog1]")
+dog1 = Duck_Hunting()
+dog1.hunting()
+dog1.CheckDucks()
+print('\n')
+
+print("[dog2]")
+dog2 = Duck_Hunting()
+dog2.CheckDucks()
+for i in range(0, 15):
+    dog2.hunting()
+    dog2.CheckDucks()
+print('\n' * 3)
+
+##########################################################
+import sys
+print(sys.version)
+print('\n' * 3)
+
+##########################################################
+class Dog:
+#    def __init__(self):
+#        print('wowwow')
+#    def swim(self):
+#        print('I am swimming')
+#Amy = Dog()
+#Amy.swim()
+    def __init__(self, x):
+        self.power = x
+    def check_power(self):
+        print(self.power)
+
+amy = Dog(15)
+lex = Dog(1)
+lex.check_power()
+amy.check_power()
+print('\n' * 3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print('\n' * 3)
